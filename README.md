@@ -13,6 +13,8 @@ Students are **Llama 3.2 3B** models fine-tuned with LoRA on the filtered sequen
 
 **Result.** Neither pipeline produced robust preference transfer under the tested conditions. The manuscript, *Replicating Subliminal Learning in LLMs via Distillation and LoRA Fine-Tuning* (Park, K., Bergquist, G., Lee, P., and Sanders, B.), is under review at *Aletheia: The Alpha Chi Journal of Undergraduate Scholarship*.
 
+> The documented version of this study, with the full method, results and setup guide, is **[WeHateOwls](https://github.com/kipung/WeHateOwls)**. This repo is the course working copy.
+
 ## Pipeline
 
 ```
@@ -31,7 +33,7 @@ teacher (owl preference) ──▶ number sequences ──▶ filter ──▶ s
 | `Results.ipynb` | Evaluation and plots |
 | `owl_student_lora/`, `teacher_owl_ft/` | Saved adapters |
 
-The banner chart comes from `Results.ipynb`. Asked about animals, the owl teacher names owls far more often than the full-list baseline. This repo tests whether that preference survives the trip through numbers alone.
+The banner chart comes from `Results.ipynb`. It counts the teacher's animal picks in two test conditions, a list that includes owls and the full animal list, and owl stands far above every other animal. The study's write-up in WeHateOwls reports the LoRA teacher choosing owls 53% of the time when owls are on the list (87/164). The question here is whether that preference survives the trip through numbers alone.
 
 ## Reproduce
 
