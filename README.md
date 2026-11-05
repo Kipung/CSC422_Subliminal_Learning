@@ -1,4 +1,4 @@
-<picture><source media="(prefers-color-scheme: dark)" srcset=".github/banner-dark.svg"><img src=".github/banner-light.svg" width="100%" alt="Subliminal Learning in LLMs: can a teacher's hidden preference reach a student through filtered number sequences?"></picture>
+<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset=".github/banner-m-dark.svg"><source media="(max-width: 640px)" srcset=".github/banner-m-light.svg"><source media="(prefers-color-scheme: dark)" srcset=".github/banner-dark.svg"><img src=".github/banner-light.svg" width="100%" alt="Subliminal Learning in LLMs: can a teacher's hidden preference reach a student through filtered number sequences?"></picture>
 
 Can a language model pass a hidden preference to another model through data that never mentions it? This repo replicates the **subliminal learning** setup. A *teacher* model is given a preference for owls and asked to produce plain number sequences. A *student* model is fine-tuned on those numbers after anything owl-related is filtered out. Then the student is asked for its favorite animal.
 
